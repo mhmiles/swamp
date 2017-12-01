@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		023188A61FD0FB2900BAE479 /* swamp.h in Headers */ = {isa = PBXBuildFile; fileRef = 023188A41FD0FB2900BAE479 /* swamp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		023188DA1FD0FB6B00BAE479 /* WebSocketSwampTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188AD1FD0FB6A00BAE479 /* WebSocketSwampTransport.swift */; };
+		023188DB1FD0FB6B00BAE479 /* SwampTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188AE1FD0FB6A00BAE479 /* SwampTransport.swift */; };
+		023188DC1FD0FB6B00BAE479 /* SwampError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188AF1FD0FB6A00BAE479 /* SwampError.swift */; };
+		023188DD1FD0FB6B00BAE479 /* SwampCraAuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188B11FD0FB6A00BAE479 /* SwampCraAuthHelper.swift */; };
+		023188DE1FD0FB6B00BAE479 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188B21FD0FB6A00BAE479 /* Extensions.swift */; };
+		023188DF1FD0FB6B00BAE479 /* SwampMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188B41FD0FB6A00BAE479 /* SwampMessage.swift */; };
+		023188E01FD0FB6B00BAE479 /* ChallengeSwampMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188B61FD0FB6A00BAE479 /* ChallengeSwampMessage.swift */; };
+		023188E11FD0FB6B00BAE479 /* AuthenticateSwampMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188B71FD0FB6A00BAE479 /* AuthenticateSwampMessage.swift */; };
+		023188E21FD0FB6B00BAE479 /* SwampMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188B81FD0FB6A00BAE479 /* SwampMessages.swift */; };
+		023188E31FD0FB6B00BAE479 /* PublishSwampMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188BB1FD0FB6A00BAE479 /* PublishSwampMessage.swift */; };
+		023188E41FD0FB6B00BAE479 /* PublishedSwampMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188BC1FD0FB6A00BAE479 /* PublishedSwampMessage.swift */; };
+		023188E51FD0FB6B00BAE479 /* UnsubscribeSwampMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188BE1FD0FB6A00BAE479 /* UnsubscribeSwampMessage.swift */; };
+		023188E61FD0FB6B00BAE479 /* SubscribeSwampMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188BF1FD0FB6A00BAE479 /* SubscribeSwampMessage.swift */; };
+		023188E71FD0FB6B00BAE479 /* EventSwampMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188C01FD0FB6A00BAE479 /* EventSwampMessage.swift */; };
+		023188E81FD0FB6B00BAE479 /* SubscribedSwampMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188C11FD0FB6A00BAE479 /* SubscribedSwampMessage.swift */; };
+		023188E91FD0FB6B00BAE479 /* UnsubscribedSwampMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188C21FD0FB6A00BAE479 /* UnsubscribedSwampMessage.swift */; };
+		023188EA1FD0FB6B00BAE479 /* UnregisteredSwampMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188C51FD0FB6A00BAE479 /* UnregisteredSwampMessage.swift */; };
+		023188EB1FD0FB6B00BAE479 /* InvocationSwampMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188C61FD0FB6A00BAE479 /* InvocationSwampMessage.swift */; };
+		023188EC1FD0FB6B00BAE479 /* YieldSwampMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188C71FD0FB6A00BAE479 /* YieldSwampMessage.swift */; };
+		023188ED1FD0FB6B00BAE479 /* RegisterSwampMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188C81FD0FB6A00BAE479 /* RegisterSwampMessage.swift */; };
+		023188EE1FD0FB6B00BAE479 /* RegisteredSwampMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188C91FD0FB6A00BAE479 /* RegisteredSwampMessage.swift */; };
+		023188EF1FD0FB6B00BAE479 /* UnregisterSwampMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188CA1FD0FB6A00BAE479 /* UnregisterSwampMessage.swift */; };
+		023188F01FD0FB6B00BAE479 /* CallSwampMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188CC1FD0FB6A00BAE479 /* CallSwampMessage.swift */; };
+		023188F11FD0FB6B00BAE479 /* ResultSwampMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188CD1FD0FB6A00BAE479 /* ResultSwampMessage.swift */; };
+		023188F21FD0FB6B00BAE479 /* ErrorSwampMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188CF1FD0FB6A00BAE479 /* ErrorSwampMessage.swift */; };
+		023188F31FD0FB6B00BAE479 /* AbortSwampMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188D11FD0FB6A00BAE479 /* AbortSwampMessage.swift */; };
+		023188F41FD0FB6B00BAE479 /* GoodbyeSwampMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188D21FD0FB6A00BAE479 /* GoodbyeSwampMessage.swift */; };
+		023188F51FD0FB6B00BAE479 /* HelloSwampMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188D31FD0FB6A00BAE479 /* HelloSwampMessage.swift */; };
+		023188F61FD0FB6B00BAE479 /* WelcomeSwampMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188D41FD0FB6A00BAE479 /* WelcomeSwampMessage.swift */; };
+		023188F71FD0FB6B00BAE479 /* SwampSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188D51FD0FB6A00BAE479 /* SwampSession.swift */; };
+		023188F81FD0FB6B00BAE479 /* JSONSwampSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188D71FD0FB6A00BAE479 /* JSONSwampSerializer.swift */; };
+		023188F91FD0FB6B00BAE479 /* SwampSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188D81FD0FB6A00BAE479 /* SwampSerializer.swift */; };
+		023188FA1FD0FB6B00BAE479 /* SwampRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023188D91FD0FB6B00BAE479 /* SwampRole.swift */; };
+		023188FC1FD0FB9200BAE479 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 023188FB1FD0FB9200BAE479 /* Cartfile */; };
+		023188FE1FD0FB9900BAE479 /* Swamp.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 023188FD1FD0FB9900BAE479 /* Swamp.podspec */; };
+		023189021FD0FC8300BAE479 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 023189001FD0FC8300BAE479 /* CryptoSwift.framework */; };
+		023189031FD0FC8300BAE479 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 023189011FD0FC8300BAE479 /* Starscream.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		023188A11FD0FB2900BAE479 /* swamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = swamp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		023188A41FD0FB2900BAE479 /* swamp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = swamp.h; sourceTree = "<group>"; };
+		023188A51FD0FB2900BAE479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		023188AD1FD0FB6A00BAE479 /* WebSocketSwampTransport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketSwampTransport.swift; sourceTree = "<group>"; };
+		023188AE1FD0FB6A00BAE479 /* SwampTransport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwampTransport.swift; sourceTree = "<group>"; };
+		023188AF1FD0FB6A00BAE479 /* SwampError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwampError.swift; sourceTree = "<group>"; };
+		023188B11FD0FB6A00BAE479 /* SwampCraAuthHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwampCraAuthHelper.swift; sourceTree = "<group>"; };
+		023188B21FD0FB6A00BAE479 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		023188B41FD0FB6A00BAE479 /* SwampMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwampMessage.swift; sourceTree = "<group>"; };
+		023188B61FD0FB6A00BAE479 /* ChallengeSwampMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeSwampMessage.swift; sourceTree = "<group>"; };
+		023188B71FD0FB6A00BAE479 /* AuthenticateSwampMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateSwampMessage.swift; sourceTree = "<group>"; };
+		023188B81FD0FB6A00BAE479 /* SwampMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwampMessages.swift; sourceTree = "<group>"; };
+		023188BB1FD0FB6A00BAE479 /* PublishSwampMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishSwampMessage.swift; sourceTree = "<group>"; };
+		023188BC1FD0FB6A00BAE479 /* PublishedSwampMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishedSwampMessage.swift; sourceTree = "<group>"; };
+		023188BE1FD0FB6A00BAE479 /* UnsubscribeSwampMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsubscribeSwampMessage.swift; sourceTree = "<group>"; };
+		023188BF1FD0FB6A00BAE479 /* SubscribeSwampMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribeSwampMessage.swift; sourceTree = "<group>"; };
+		023188C01FD0FB6A00BAE479 /* EventSwampMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventSwampMessage.swift; sourceTree = "<group>"; };
+		023188C11FD0FB6A00BAE479 /* SubscribedSwampMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscribedSwampMessage.swift; sourceTree = "<group>"; };
+		023188C21FD0FB6A00BAE479 /* UnsubscribedSwampMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsubscribedSwampMessage.swift; sourceTree = "<group>"; };
+		023188C51FD0FB6A00BAE479 /* UnregisteredSwampMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnregisteredSwampMessage.swift; sourceTree = "<group>"; };
+		023188C61FD0FB6A00BAE479 /* InvocationSwampMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvocationSwampMessage.swift; sourceTree = "<group>"; };
+		023188C71FD0FB6A00BAE479 /* YieldSwampMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YieldSwampMessage.swift; sourceTree = "<group>"; };
+		023188C81FD0FB6A00BAE479 /* RegisterSwampMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterSwampMessage.swift; sourceTree = "<group>"; };
+		023188C91FD0FB6A00BAE479 /* RegisteredSwampMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisteredSwampMessage.swift; sourceTree = "<group>"; };
+		023188CA1FD0FB6A00BAE479 /* UnregisterSwampMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnregisterSwampMessage.swift; sourceTree = "<group>"; };
+		023188CC1FD0FB6A00BAE479 /* CallSwampMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallSwampMessage.swift; sourceTree = "<group>"; };
+		023188CD1FD0FB6A00BAE479 /* ResultSwampMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultSwampMessage.swift; sourceTree = "<group>"; };
+		023188CF1FD0FB6A00BAE479 /* ErrorSwampMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorSwampMessage.swift; sourceTree = "<group>"; };
+		023188D11FD0FB6A00BAE479 /* AbortSwampMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbortSwampMessage.swift; sourceTree = "<group>"; };
+		023188D21FD0FB6A00BAE479 /* GoodbyeSwampMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodbyeSwampMessage.swift; sourceTree = "<group>"; };
+		023188D31FD0FB6A00BAE479 /* HelloSwampMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloSwampMessage.swift; sourceTree = "<group>"; };
+		023188D41FD0FB6A00BAE479 /* WelcomeSwampMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeSwampMessage.swift; sourceTree = "<group>"; };
+		023188D51FD0FB6A00BAE479 /* SwampSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwampSession.swift; sourceTree = "<group>"; };
+		023188D71FD0FB6A00BAE479 /* JSONSwampSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSwampSerializer.swift; sourceTree = "<group>"; };
+		023188D81FD0FB6A00BAE479 /* SwampSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwampSerializer.swift; sourceTree = "<group>"; };
+		023188D91FD0FB6B00BAE479 /* SwampRole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwampRole.swift; sourceTree = "<group>"; };
+		023188FB1FD0FB9200BAE479 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		023188FD1FD0FB9900BAE479 /* Swamp.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Swamp.podspec; sourceTree = "<group>"; };
+		023189001FD0FC8300BAE479 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
+		023189011FD0FC8300BAE479 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0231889D1FD0FB2900BAE479 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				023189021FD0FC8300BAE479 /* CryptoSwift.framework in Frameworks */,
+				023189031FD0FC8300BAE479 /* Starscream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		023188971FD0FB2900BAE479 = {
+			isa = PBXGroup;
+			children = (
+				023188FB1FD0FB9200BAE479 /* Cartfile */,
+				023188FD1FD0FB9900BAE479 /* Swamp.podspec */,
+				023188A31FD0FB2900BAE479 /* swamp */,
+				023188A21FD0FB2900BAE479 /* Products */,
+				023188FF1FD0FC8200BAE479 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		023188A21FD0FB2900BAE479 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				023188A11FD0FB2900BAE479 /* swamp.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		023188A31FD0FB2900BAE479 /* swamp */ = {
+			isa = PBXGroup;
+			children = (
+				023188A41FD0FB2900BAE479 /* swamp.h */,
+				023188B01FD0FB6A00BAE479 /* Auth */,
+				023188B21FD0FB6A00BAE479 /* Extensions.swift */,
+				023188B31FD0FB6A00BAE479 /* Messages */,
+				023188D61FD0FB6A00BAE479 /* Serialization */,
+				023188AF1FD0FB6A00BAE479 /* SwampError.swift */,
+				023188D91FD0FB6B00BAE479 /* SwampRole.swift */,
+				023188D51FD0FB6A00BAE479 /* SwampSession.swift */,
+				023188AC1FD0FB6A00BAE479 /* Transport */,
+				023188A51FD0FB2900BAE479 /* Info.plist */,
+			);
+			path = swamp;
+			sourceTree = "<group>";
+		};
+		023188AC1FD0FB6A00BAE479 /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				023188AD1FD0FB6A00BAE479 /* WebSocketSwampTransport.swift */,
+				023188AE1FD0FB6A00BAE479 /* SwampTransport.swift */,
+			);
+			path = Transport;
+			sourceTree = "<group>";
+		};
+		023188B01FD0FB6A00BAE479 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				023188B11FD0FB6A00BAE479 /* SwampCraAuthHelper.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		023188B31FD0FB6A00BAE479 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				023188B41FD0FB6A00BAE479 /* SwampMessage.swift */,
+				023188B51FD0FB6A00BAE479 /* Auth */,
+				023188B81FD0FB6A00BAE479 /* SwampMessages.swift */,
+				023188B91FD0FB6A00BAE479 /* PubSub */,
+				023188C31FD0FB6A00BAE479 /* RPC */,
+				023188CE1FD0FB6A00BAE479 /* Error */,
+				023188D01FD0FB6A00BAE479 /* Session */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		023188B51FD0FB6A00BAE479 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				023188B61FD0FB6A00BAE479 /* ChallengeSwampMessage.swift */,
+				023188B71FD0FB6A00BAE479 /* AuthenticateSwampMessage.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		023188B91FD0FB6A00BAE479 /* PubSub */ = {
+			isa = PBXGroup;
+			children = (
+				023188BA1FD0FB6A00BAE479 /* Publisher */,
+				023188BD1FD0FB6A00BAE479 /* Subscriber */,
+			);
+			path = PubSub;
+			sourceTree = "<group>";
+		};
+		023188BA1FD0FB6A00BAE479 /* Publisher */ = {
+			isa = PBXGroup;
+			children = (
+				023188BB1FD0FB6A00BAE479 /* PublishSwampMessage.swift */,
+				023188BC1FD0FB6A00BAE479 /* PublishedSwampMessage.swift */,
+			);
+			path = Publisher;
+			sourceTree = "<group>";
+		};
+		023188BD1FD0FB6A00BAE479 /* Subscriber */ = {
+			isa = PBXGroup;
+			children = (
+				023188BE1FD0FB6A00BAE479 /* UnsubscribeSwampMessage.swift */,
+				023188BF1FD0FB6A00BAE479 /* SubscribeSwampMessage.swift */,
+				023188C01FD0FB6A00BAE479 /* EventSwampMessage.swift */,
+				023188C11FD0FB6A00BAE479 /* SubscribedSwampMessage.swift */,
+				023188C21FD0FB6A00BAE479 /* UnsubscribedSwampMessage.swift */,
+			);
+			path = Subscriber;
+			sourceTree = "<group>";
+		};
+		023188C31FD0FB6A00BAE479 /* RPC */ = {
+			isa = PBXGroup;
+			children = (
+				023188C41FD0FB6A00BAE479 /* Callee */,
+				023188CB1FD0FB6A00BAE479 /* Caller */,
+			);
+			path = RPC;
+			sourceTree = "<group>";
+		};
+		023188C41FD0FB6A00BAE479 /* Callee */ = {
+			isa = PBXGroup;
+			children = (
+				023188C51FD0FB6A00BAE479 /* UnregisteredSwampMessage.swift */,
+				023188C61FD0FB6A00BAE479 /* InvocationSwampMessage.swift */,
+				023188C71FD0FB6A00BAE479 /* YieldSwampMessage.swift */,
+				023188C81FD0FB6A00BAE479 /* RegisterSwampMessage.swift */,
+				023188C91FD0FB6A00BAE479 /* RegisteredSwampMessage.swift */,
+				023188CA1FD0FB6A00BAE479 /* UnregisterSwampMessage.swift */,
+			);
+			path = Callee;
+			sourceTree = "<group>";
+		};
+		023188CB1FD0FB6A00BAE479 /* Caller */ = {
+			isa = PBXGroup;
+			children = (
+				023188CC1FD0FB6A00BAE479 /* CallSwampMessage.swift */,
+				023188CD1FD0FB6A00BAE479 /* ResultSwampMessage.swift */,
+			);
+			path = Caller;
+			sourceTree = "<group>";
+		};
+		023188CE1FD0FB6A00BAE479 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				023188CF1FD0FB6A00BAE479 /* ErrorSwampMessage.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		023188D01FD0FB6A00BAE479 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				023188D11FD0FB6A00BAE479 /* AbortSwampMessage.swift */,
+				023188D21FD0FB6A00BAE479 /* GoodbyeSwampMessage.swift */,
+				023188D31FD0FB6A00BAE479 /* HelloSwampMessage.swift */,
+				023188D41FD0FB6A00BAE479 /* WelcomeSwampMessage.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		023188D61FD0FB6A00BAE479 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				023188D71FD0FB6A00BAE479 /* JSONSwampSerializer.swift */,
+				023188D81FD0FB6A00BAE479 /* SwampSerializer.swift */,
+			);
+			path = Serialization;
+			sourceTree = "<group>";
+		};
+		023188FF1FD0FC8200BAE479 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				023189001FD0FC8300BAE479 /* CryptoSwift.framework */,
+				023189011FD0FC8300BAE479 /* Starscream.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0231889E1FD0FB2900BAE479 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				023188A61FD0FB2900BAE479 /* swamp.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		023188A01FD0FB2900BAE479 /* swamp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 023188A91FD0FB2900BAE479 /* Build configuration list for PBXNativeTarget "swamp" */;
+			buildPhases = (
+				0231889C1FD0FB2900BAE479 /* Sources */,
+				0231889D1FD0FB2900BAE479 /* Frameworks */,
+				0231889E1FD0FB2900BAE479 /* Headers */,
+				0231889F1FD0FB2900BAE479 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = swamp;
+			productName = swamp;
+			productReference = 023188A11FD0FB2900BAE479 /* swamp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		023188981FD0FB2900BAE479 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				TargetAttributes = {
+					023188A01FD0FB2900BAE479 = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0231889B1FD0FB2900BAE479 /* Build configuration list for PBXProject "swamp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 023188971FD0FB2900BAE479;
+			productRefGroup = 023188A21FD0FB2900BAE479 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				023188A01FD0FB2900BAE479 /* swamp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0231889F1FD0FB2900BAE479 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				023188FC1FD0FB9200BAE479 /* Cartfile in Resources */,
+				023188FE1FD0FB9900BAE479 /* Swamp.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0231889C1FD0FB2900BAE479 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				023188DE1FD0FB6B00BAE479 /* Extensions.swift in Sources */,
+				023188DB1FD0FB6B00BAE479 /* SwampTransport.swift in Sources */,
+				023188E01FD0FB6B00BAE479 /* ChallengeSwampMessage.swift in Sources */,
+				023188F71FD0FB6B00BAE479 /* SwampSession.swift in Sources */,
+				023188E21FD0FB6B00BAE479 /* SwampMessages.swift in Sources */,
+				023188F81FD0FB6B00BAE479 /* JSONSwampSerializer.swift in Sources */,
+				023188DF1FD0FB6B00BAE479 /* SwampMessage.swift in Sources */,
+				023188E41FD0FB6B00BAE479 /* PublishedSwampMessage.swift in Sources */,
+				023188F61FD0FB6B00BAE479 /* WelcomeSwampMessage.swift in Sources */,
+				023188DC1FD0FB6B00BAE479 /* SwampError.swift in Sources */,
+				023188E71FD0FB6B00BAE479 /* EventSwampMessage.swift in Sources */,
+				023188EC1FD0FB6B00BAE479 /* YieldSwampMessage.swift in Sources */,
+				023188E11FD0FB6B00BAE479 /* AuthenticateSwampMessage.swift in Sources */,
+				023188EF1FD0FB6B00BAE479 /* UnregisterSwampMessage.swift in Sources */,
+				023188F51FD0FB6B00BAE479 /* HelloSwampMessage.swift in Sources */,
+				023188DA1FD0FB6B00BAE479 /* WebSocketSwampTransport.swift in Sources */,
+				023188EB1FD0FB6B00BAE479 /* InvocationSwampMessage.swift in Sources */,
+				023188E31FD0FB6B00BAE479 /* PublishSwampMessage.swift in Sources */,
+				023188F91FD0FB6B00BAE479 /* SwampSerializer.swift in Sources */,
+				023188E51FD0FB6B00BAE479 /* UnsubscribeSwampMessage.swift in Sources */,
+				023188E61FD0FB6B00BAE479 /* SubscribeSwampMessage.swift in Sources */,
+				023188F41FD0FB6B00BAE479 /* GoodbyeSwampMessage.swift in Sources */,
+				023188F01FD0FB6B00BAE479 /* CallSwampMessage.swift in Sources */,
+				023188F21FD0FB6B00BAE479 /* ErrorSwampMessage.swift in Sources */,
+				023188EE1FD0FB6B00BAE479 /* RegisteredSwampMessage.swift in Sources */,
+				023188E81FD0FB6B00BAE479 /* SubscribedSwampMessage.swift in Sources */,
+				023188DD1FD0FB6B00BAE479 /* SwampCraAuthHelper.swift in Sources */,
+				023188F31FD0FB6B00BAE479 /* AbortSwampMessage.swift in Sources */,
+				023188FA1FD0FB6B00BAE479 /* SwampRole.swift in Sources */,
+				023188E91FD0FB6B00BAE479 /* UnsubscribedSwampMessage.swift in Sources */,
+				023188EA1FD0FB6B00BAE479 /* UnregisteredSwampMessage.swift in Sources */,
+				023188ED1FD0FB6B00BAE479 /* RegisterSwampMessage.swift in Sources */,
+				023188F11FD0FB6B00BAE479 /* ResultSwampMessage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		023188A71FD0FB2900BAE479 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		023188A81FD0FB2900BAE479 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		023188AA1FD0FB2900BAE479 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = swamp/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hollingsware.swamp;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		023188AB1FD0FB2900BAE479 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = swamp/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hollingsware.swamp;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0231889B1FD0FB2900BAE479 /* Build configuration list for PBXProject "swamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				023188A71FD0FB2900BAE479 /* Debug */,
+				023188A81FD0FB2900BAE479 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		023188A91FD0FB2900BAE479 /* Build configuration list for PBXNativeTarget "swamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				023188AA1FD0FB2900BAE479 /* Debug */,
+				023188AB1FD0FB2900BAE479 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 023188981FD0FB2900BAE479 /* Project object */;
+}
